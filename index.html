@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Made Easier — MVP Scope Freeze v1.0</title>
+  <meta name="description" content="Complete scope freeze document for Life Made Easier MVP v1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       TOP NAV (mobile only — sidebar handles desktop)
+       ============================================================ -->
+  <nav class="topnav" role="navigation" aria-label="Mobile navigation">
+    <div class="topnav-left">
+      <span class="topnav-dot"></span>
+      <span class="mono">LME · SCOPE FREEZE</span>
+    </div>
+    <button class="topnav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="topnav-menu">
+      <a href="#area-control">Document Control</a>
+      <a href="#area-governance">Governance</a>
+      <a href="#area-scope">Scope</a>
+      <a href="#area-tech">Technical</a>
+      <a href="#area-compliance">Compliance</a>
+      <a href="#area-security">Security</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       LAYOUT: SIDEBAR + CONTENT
+       ============================================================ -->
+  <div class="layout">
+
+    <!-- ------ SIDEBAR ------ -->
+    <aside class="sidebar" role="navigation" aria-label="Table of contents">
+      <div class="sidebar-inner">
+        <div class="sidebar-brand mono">
+          <span class="sidebar-dot"></span>
+          LME v1.0
+        </div>
+
+        <nav class="toc" aria-label="Document sections">
+          <div class="toc-group">
+            <span class="toc-area-label">AREA I</span>
+            <a href="#area-control" class="toc-link">Document Control</a>
+          </div>
+          <div class="toc-group">
+            <span class="toc-area-label">AREA II</span>
+            <a href="#area-governance" class="toc-link">Scope Governance</a>
+          </div>
+          <div class="toc-group">
+            <span class="toc-area-label">AREA III</span>
+            <a href="#area-scope" class="toc-link">Scope Definition</a>
+          </div>
+          <div class="toc-group">
+            <span class="toc-area-label">AREA IV</span>
+            <a href="#area-tech" class="toc-link">Technical Foundation</a>
+          </div>
+          <div class="toc-group">
+            <span class="toc-area-label">AREA V</span>
+            <a href="#area-compliance" class="toc-link">Platform Compliance</a>
+          </div>
+          <div class="toc-group">
+            <span class="toc-area-label">AREA VI</span>
+            <a href="#area-security" class="toc-link">Security & Deliverables</a>
+          </div>
+        </nav>
+
+        <div class="sidebar-footer mono">
+          <span class="sidebar-status"></span> DRAFT · PENDING SIGN-OFF
+        </div>
+      </div>
+    </aside>
+
+    <!-- ------ MAIN CONTENT ------ -->
+    <main class="content">
+
+      <!-- ============================================================
+           AREA I — DOCUMENT CONTROL
+           ============================================================ -->
+      <div class="area area-i" id="area-control">
+
+        <header class="doc-header">
+          <div class="eyebrow mono">Product Scope Freeze Document</div>
+          <h1>Life Made Easier<br><span class="text-muted">MVP Scope Freeze</span></h1>
+          <p class="doc-sub">This document defines, completely and finally, what is being built in Version 1.0. Anything not listed here is out of scope for this release and moves to Phase 2 under a Change Request.</p>
+
+          <div class="stamp" aria-label="Scope frozen stamp">
+            <div class="stamp-top">SCOPE</div>
+            <div class="stamp-mid">FROZEN</div>
+            <div class="stamp-bot">V1.0 · MAY 2026</div>
+          </div>
+
+          <button class="pdf-btn mono" id="downloadPdf" aria-label="Download as PDF">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 11L3 13.5C3 13.6326 3.05268 13.7598 3.14645 13.8536C3.24021 13.9473 3.36739 14 3.5 14L12.5 14C12.6326 14 12.7598 13.9473 12.8536 13.8536C12.9473 13.7598 13 13.6326 13 13.5L13 11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 2L8 9.5M8 9.5L5.5 7M8 9.5L10.5 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Download as PDF
+          </button>
+
+          <dl class="meta-list">
+            <div><dt>Project</dt><dd>Life Made Easier</dd></div>
+            <div><dt>Version</dt><dd>MVP v1.0</dd></div>
+            
+            <div><dt>Client</dt><dd>Rajiv Lakhani</dd></div>
+            <div><dt>Author</dt><dd>Arun · Infinity Soft Systems</dd></div>
+            <div><dt>Status</dt><dd><span class="status-badge">FROZEN — Pending Sign-Off</span></dd></div>
+          </dl>
+        </header>
+
+
+      </div>
+
+      <!-- ============================================================
+           AREA II — SCOPE GOVERNANCE
+           ============================================================ -->
+      <div class="area area-ii" id="area-governance">
+
+        <div class="area-head">
+          <span class="area-badge mono">AREA II</span>
+          <h2>Scope Governance</h2>
+        </div>
+        <p class="area-intro">Rules and processes that govern how this scope freeze is maintained, challenged, and changed.</p>
+
+        <!-- Freeze Rules -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">RULES</span>
+            <h3>Scope Freeze Rules</h3>
+          </div>
+          <p class="sec-intro">Once this document is approved, these rules apply for the remainder of the v1.0 build.</p>
+          <div class="rule-card">
+            <ul class="rule-list">
+              <li>No new features will be added to this release.</li>
+              <li>Any change to this scope requires a written Change Request (CR).</li>
+              <li>New requirements raised after freeze move automatically to Phase 2 backlog.</li>
+              <li>UI changes after design sign-off require CR approval.</li>
+              <li>Database schema changes after development begins require CR approval.</li>
+              <li>API changes affecting a completed module require CR approval.</li>
+            </ul>
+            <div class="rule-callout">Any feature not explicitly listed above is out of scope for v1.0.</div>
+          </div>
+        </section>
+
+        <!-- Change Request Process -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">PROCESS</span>
+            <h3>Change Request Workflow</h3>
+          </div>
+          <p class="sec-intro">Every change follows this path — never a WhatsApp message, a call, or a verbal "can we just also add."</p>
+          <div class="cr-chain">
+            <div class="cr-link"><span class="cr-step-num">01</span><span class="cr-step-label">Requirement raised</span></div>
+            <span class="cr-conn">&rarr;</span>
+            <div class="cr-link"><span class="cr-step-num">02</span><span class="cr-step-label">Impact analysis</span></div>
+            <span class="cr-conn">&rarr;</span>
+            <div class="cr-link"><span class="cr-step-num">03</span><span class="cr-step-label">Cost + timeline est.</span></div>
+            <span class="cr-conn">&rarr;</span>
+            <div class="cr-link cr-link-client"><span class="cr-step-num">04</span><span class="cr-step-label">Client approval</span></div>
+            <span class="cr-conn">&rarr;</span>
+            <div class="cr-link cr-link-done"><span class="cr-step-num">05</span><span class="cr-step-label">Implementation</span></div>
+          </div>
+        </section>
+
+        <!-- Assumptions -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">ASSUMPTIONS</span>
+            <h3>Dependency Assumptions</h3>
+          </div>
+          <p class="sec-intro">If any of these change, the timeline and scope are no longer valid without a CR.</p>
+          <div class="chip-grid">
+            <span class="chip">English only</span>
+            <span class="chip">UK only</span>
+            <span class="chip">Max 4 family members</span>
+            <span class="chip">Mobile-first, no tablet UI</span>
+            <span class="chip">No admin access to user docs</span>
+            <span class="chip">Single AWS region (eu-west-2)</span>
+            <span class="chip">7 fixed categories + Other</span>
+            <span class="chip">Free tier: 1 GB storage</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============================================================
+           AREA III — SCOPE DEFINITION
+           ============================================================ -->
+      <div class="area area-iii" id="area-scope">
+
+        <div class="area-head">
+          <span class="area-badge mono">AREA III</span>
+          <h2>Scope Definition</h2>
+        </div>
+        <p class="area-intro">What is being built in v1.0 and what is explicitly deferred to Phase 2.</p>
+
+        <!-- Platforms -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">PLATFORMS</span>
+            <h3>Delivery Targets</h3>
+          </div>
+          <div class="targets">
+            <div class="target-card"><span class="target-label">Mobile</span><strong>iOS app</strong></div>
+            <div class="target-card"><span class="target-label">Mobile</span><strong>Android app</strong></div>
+            <div class="target-card"><span class="target-label">Web</span><strong>Admin portal</strong></div>
+            <div class="target-card"><span class="target-label">Server</span><strong>Backend APIs</strong></div>
+          </div>
+        </section>
+
+        <!-- In-Scope Features -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">FEATURES</span>
+            <h3>In-Scope Features</h3>
+          </div>
+          <p class="sec-intro">Each category below is a committed delivery for v1.0. Click to expand details.</p>
+
+          <div class="progress-block">
+            <div class="progress-stat">
+              <span class="progress-number" id="scopeCount">0</span>
+              <span class="progress-label" id="scopeLabel">features locked</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <div class="progress-legend">
+                <span><span class="pdot pdot-in"></span>In scope</span>
+                <span><span class="pdot pdot-out"></span>Phase 2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-strip" role="tablist" aria-label="Filter features">
+            <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-chip" data-filter="core" role="tab" aria-selected="false">Core</button>
+            <button class="filter-chip" data-filter="ai" role="tab" aria-selected="false">AI (rule-based)</button>
+          </div>
+
+          <div class="accordion-set" id="catGrid"></div>
+        </section>
+
+        <!-- AI Scope -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">AI RULE</span>
+            <h3>AI Scope for v1.0</h3>
+          </div>
+          <p class="sec-intro">Read this twice — it is the section most likely to drift.</p>
+          <div class="callout callout-ai">
+            <h4 class="mono">AI in v1.0 is rule-based only</h4>
+            <ul class="rule-list">
+              <li>No machine learning model training.</li>
+              <li>No large language model (LLM) calls.</li>
+              <li>No OCR or document text recognition.</li>
+              <li>No photo-to-data AI scanning.</li>
+            </ul>
+          </div>
+          <p class="note">All three "AI" features in the accordion above are configurable rule engines — maintained via the admin portal, not retrained models. Editable without an app release.</p>
+        </section>
+
+        <!-- Out of Scope -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">EXCLUDED</span>
+            <h3>Explicitly Out of Scope — Phase 2</h3>
+          </div>
+          <p class="sec-intro">These were discussed but deliberately deferred. They will be scoped and estimated after the MVP is live.</p>
+          <div class="oos-grid" id="outGrid"></div>
+        </section>
+      </div>
+
+      <!-- ============================================================
+           AREA IV — TECHNICAL FOUNDATION
+           ============================================================ -->
+      <div class="area area-iv" id="area-tech">
+
+        <div class="area-head">
+          <span class="area-badge mono">AREA IV</span>
+          <h2>Technical Foundation</h2>
+        </div>
+        <p class="area-intro">Architecture, data model, API contracts, and infrastructure decisions — frozen alongside the feature scope.</p>
+
+        <!-- Architecture -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">ARCHITECTURE</span>
+            <h3>System Architecture</h3>
+          </div>
+          <p class="sec-intro">How a document moves through the system and where the rule-based AI features sit.</p>
+          <figure class="arch-diagram">
+            <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture diagram">
+              <defs>
+                <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M2 1L8 5L2 9" fill="none" stroke="#636D83" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </marker>
+                <marker id="arr-lk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M2 1L8 5L2 9" fill="none" stroke="#6C5CE7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </marker>
+              </defs>
+              <style>
+                .al{font-family:'Plus Jakarta Sans',Inter,sans-serif;font-size:13px;fill:#1A1D2E;font-weight:700;}
+                .as{font-family:'Plus Jakarta Sans',Inter,sans-serif;font-size:11px;fill:#636D83;}
+                .ag{font-family:'JetBrains Mono',monospace;font-size:11px;fill:#636D83;letter-spacing:.04em;text-transform:uppercase;font-weight:600;}
+                .ab{fill:#FFFFFF;stroke:#E2E5EC;stroke-width:1;rx:8;}
+                .abl{fill:rgba(0,184,179,0.06);stroke:#00B8B3;stroke-width:1;rx:8;}
+                .aba{fill:rgba(108,92,231,0.06);stroke:#6C5CE7;stroke-width:1;rx:8;}
+                .ac{fill:none;stroke:#CDD2DC;stroke-width:1;stroke-dasharray:4 4;rx:14;}
+              </style>
+              <rect x="40" y="30" width="380" height="120" class="ac"/><text x="58" y="52" class="ag">Mobile app — iOS / Android</text>
+              <rect x="58" y="64" width="160" height="60" class="ab"/><text x="138" y="90" class="al" text-anchor="middle">Document upload</text><text x="138" y="106" class="as" text-anchor="middle">camera or file picker</text>
+              <rect x="238" y="64" width="160" height="60" class="ab"/><text x="318" y="90" class="al" text-anchor="middle">Home dashboard</text><text x="318" y="106" class="as" text-anchor="middle">expiry ring, gap card</text>
+              <rect x="460" y="30" width="400" height="120" class="ac"/><text x="478" y="52" class="ag">Family sharing</text>
+              <rect x="478" y="64" width="170" height="60" class="ab"/><text x="563" y="90" class="al" text-anchor="middle">Family hub</text><text x="563" y="106" class="as" text-anchor="middle">up to 4 members</text>
+              <rect x="668" y="64" width="172" height="60" class="ab"/><text x="754" y="90" class="al" text-anchor="middle">Permissions model</text><text x="754" y="106" class="as" text-anchor="middle">owner-controlled sharing</text>
+              <line x1="318" y1="150" x2="318" y2="200" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <line x1="660" y1="150" x2="660" y2="200" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <rect x="40" y="200" width="820" height="80" class="ac"/><text x="58" y="222" class="ag">Backend API — NestJS</text>
+              <rect x="58" y="232" width="190" height="38" class="ab"/><text x="153" y="256" class="al" text-anchor="middle" font-size="12">Auth + user API</text>
+              <rect x="268" y="232" width="190" height="38" class="ab"/><text x="363" y="256" class="al" text-anchor="middle" font-size="12">Document API</text>
+              <rect x="478" y="232" width="190" height="38" class="ab"/><text x="573" y="256" class="al" text-anchor="middle" font-size="12">Notification API</text>
+              <rect x="688" y="232" width="152" height="38" class="ab"/><text x="764" y="256" class="al" text-anchor="middle" font-size="12">Admin API</text>
+              <line x1="153" y1="280" x2="153" y2="330" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <line x1="363" y1="280" x2="363" y2="330" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <line x1="573" y1="280" x2="573" y2="330" stroke="#6C5CE7" stroke-width="1.5" marker-end="url(#arr-lk)"/>
+              <line x1="764" y1="280" x2="764" y2="330" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <rect x="40" y="330" width="420" height="80" class="ac"/><text x="58" y="352" class="ag">Data + storage</text>
+              <rect x="58" y="362" width="180" height="38" class="ab"/><text x="148" y="386" class="al" text-anchor="middle" font-size="12">PostgreSQL</text>
+              <rect x="258" y="362" width="182" height="38" class="ab"/><text x="349" y="386" class="al" text-anchor="middle" font-size="12">AWS S3 (UK · AES-256)</text>
+              <rect x="480" y="330" width="380" height="150" class="ac" style="stroke:#6C5CE7"/><text x="498" y="352" class="ag" style="fill:#6C5CE7">Rule-based AI layer</text>
+              <rect x="498" y="362" width="170" height="46" class="aba" rx="8"/><text x="583" y="382" class="al" text-anchor="middle" font-size="12" fill="#6C5CE7">Geo-notifications</text><text x="583" y="398" class="as" text-anchor="middle">geofence triggers</text>
+              <rect x="678" y="362" width="170" height="46" class="aba" rx="8"/><text x="763" y="382" class="al" text-anchor="middle" font-size="12" fill="#6C5CE7">Renewal engine</text><text x="763" y="398" class="as" text-anchor="middle">curated KB</text>
+              <rect x="588" y="420" width="170" height="46" class="aba" rx="8"/><text x="673" y="440" class="al" text-anchor="middle" font-size="12" fill="#6C5CE7">Gap detector</text><text x="673" y="456" class="as" text-anchor="middle">if X → suggest Y</text>
+              <line x1="349" y1="410" x2="349" y2="450" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <line x1="660" y1="480" x2="660" y2="520" stroke="#636D83" stroke-width="1.2" marker-end="url(#arr)"/>
+              <rect x="40" y="450" width="420" height="120" class="ac"/><text x="58" y="472" class="ag">Engagement</text>
+              <rect x="58" y="484" width="120" height="50" class="ab"/><text x="118" y="506" class="al" text-anchor="middle" font-size="12">Push</text><text x="118" y="522" class="as" text-anchor="middle">APNs / FCM</text>
+              <rect x="190" y="484" width="120" height="50" class="ab"/><text x="250" y="506" class="al" text-anchor="middle" font-size="12">Email</text><text x="250" y="522" class="as" text-anchor="middle">SendGrid</text>
+              <rect x="322" y="484" width="120" height="50" class="ab"/><text x="382" y="506" class="al" text-anchor="middle" font-size="12">In-app inbox</text><text x="382" y="522" class="as" text-anchor="middle">notification log</text>
+              <rect x="480" y="520" width="360" height="60" class="abl" rx="8"/><text x="660" y="545" class="al" text-anchor="middle" fill="#00B8B3">Admin portal</text><text x="660" y="562" class="as" text-anchor="middle" fill="#00B8B3">analytics, revenue, KB editing</text>
+            </svg>
+            <figcaption class="mono">Fig 1. System architecture — data flow from mobile to storage and AI rule layer</figcaption>
+          </figure>
+
+        </section>
+      </div>
+
+      <!-- ============================================================
+           AREA V — PLATFORM GUIDELINES & COMPLIANCE
+           ============================================================ -->
+      <div class="area area-v" id="area-compliance">
+
+        <div class="area-head">
+          <span class="area-badge mono">AREA V</span>
+          <h2>Platform Guidelines &amp; Compliance</h2>
+        </div>
+        <p class="area-intro">Apple and Google both have rules about what apps can and cannot do. This section runs through the ones that affect LME — login flow, permissions we need, how subscriptions work, and what we tell users about their data. These are not optional, so it is good to flag them now rather than discover them during app review.</p>
+
+        <!-- Account & Auth -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">AUTH</span>
+            <h3>Account &amp; Authentication</h3>
+          </div>
+          <p class="sec-intro">Apple and Google want login to be simple. Ask for as little as possible.</p>
+
+          <div class="rule-card">
+            <h4 class="mono" style="margin-bottom:0.5rem;color:var(--text);">Sign-up — just email and password</h4>
+            <ul class="rule-list">
+              <li>We ask for <strong>email + password</strong> only. No phone number at sign-up.</li>
+              <li>Phone number if asked at all is purely for account recovery when someone forgets their password. It is never mandatory.</li>
+              <li>No date of birth, no address, no gender, no ID check during registration.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Why skip the phone number</h4>
+            <ul class="rule-list">
+              <li><strong>Phone verification hurts sign-up rates.</strong> Every extra field loses users. SMS OTP flows drop 15–25% of people at the OTP step alone — carriers sometimes delay messages, people mistype the code, or signal is weak. Email verification is much smoother.</li>
+              <li><strong>SMS is not free.</strong> At 50,000 users, sending OTP texts costs £500–1,000/month through Twilio or Vonage. Email through SendGrid is basically free at that volume.</li>
+              <li><strong>LME does not need your phone number.</strong> The app never sends SMS alerts or verifies identity by phone. Collecting it anyway would bend Apple's rule about only asking for data you actually use.</li>
+              <li><strong>Email recovery is enough</strong> for a document app. Adding phone recovery creates a SIM-swap risk with no real benefit.</li>
+              <li><strong>What about users who sign in with Apple or Google?</strong> If someone uses Apple's Hide My Email and loses their device, Apple handles recovery. Google handles it for Google sign-ins. For email-only accounts, we send a reset link. No phone needed in any path.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Sign in with Apple (required)</h4>
+            <ul class="rule-list">
+              <li>If the app offers Google sign-in (which it does), Apple requires us to also offer Sign in with Apple. Must include the <strong>Hide My Email</strong> option.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Account deletion (required by Google Play)</h4>
+            <ul class="rule-list">
+              <li>Any app that creates accounts must let users delete them from inside the app — not via a web form or email request.</li>
+              <li>We keep a 30-day soft-delete window in case someone changes their mind, but the user needs to see clearly what gets deleted and what stays.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Location & Geofencing -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">LOCATION</span>
+            <h3>Location &amp; Geofencing</h3>
+          </div>
+
+          <div class="rule-card">
+            <h4 class="mono" style="margin-bottom:0.5rem;color:var(--text);">What we use location for</h4>
+            <p style="margin-bottom:0.5rem;">LME can detect when you are near a place that matters for your documents — for instance, arriving at an airport triggers a passport reminder. That is the <strong>only</strong> thing location is used for.</p>
+            <ul class="rule-list">
+              <li>Location is <strong>opt-in</strong>. The app works fine without it; location-based suggestions just do not show.</li>
+              <li>We ask for "when in use" permission first. The "always" permission is requested only if the user opts into reminders that fire when the app is closed (e.g., airport passport nags).</li>
+              <li>Need to give Apple and Google clear, plain-English reasons for location access. For example: <em>"To remind you about your passport when you arrive at an airport."</em></li>
+              <li>Google Play also expects a short video showing how the background location feature works and why it benefits the user.</li>
+              <li>Location data never leaves the phone and is never shared with anyone.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Geofencing things to sort out</h4>
+            <ul class="rule-list">
+              <li><strong>iOS only tracks 20 regions at a time.</strong> If someone has more than 20 document types with location triggers, iOS quietly drops the oldest ones. We need to figure out which locations matter most (airports trump the Post Office) and keep only the top 20 on the device.</li>
+              <li><strong>Battery life.</strong> Constant location tracking drains the battery. We monitor only when within 500m of a registered zone, and pause entirely if the app has not been opened in 14 days.</li>
+              <li><strong>If location is denied, the app still works.</strong> Geo-suggestions just do not fire. No prompts, no nags. If the user later wants location features, we show a one-time link to Settings.</li>
+              <li><strong>Installing the app at the airport.</strong> Location monitoring works by detecting when you <em>enter</em> a zone. If someone installs LME at Heathrow, they will not get a passport reminder until they leave and come back. Worth flagging so we can add a one-time location check at setup.</li>
+              <li><strong>False alarms.</strong> Someone living next to a small airstrip might keep getting passport reminders. We should let them dismiss individual geofences and provide a master off-switch for location features.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Subscriptions -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">PAYMENTS</span>
+            <h3>Subscriptions &amp; In-App Purchases</h3>
+          </div>
+
+          <div class="rule-card">
+            <h4 class="mono" style="margin-bottom:0.5rem;color:var(--text);">Free tier — 1 GB storage, not 5 documents</h4>
+            <p style="margin-bottom:0.5rem;">The free tier gives <strong>1 GB of storage</strong> rather than a fixed number of documents. Here is why that matters:</p>
+            <ul class="rule-list">
+              <li>A passport photo is ~500 KB. Five of them use 3 MB. A 5-doc limit would penalise this user for no reason. Under 1 GB storage they have plenty of room.</li>
+              <li>A scanned tenancy agreement can be 200 MB as a single PDF. Under a 5-doc limit that one file eats 20% of your quota. Under 1 GB storage it is 20% of a much fairer allowance.</li>
+              <li>If someone uploads five large video files and calls them "documents," we bear the server cost with no upgrade path. Storage-based pricing handles this naturally — use more, pay more.</li>
+              <li>People already understand storage caps from Gmail, iCloud, Dropbox. Document-count limits confuse them and generate support tickets.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Billing rules (Apple and Google)</h4>
+            <ul class="rule-list">
+              <li>All subscription payments go through Apple's or Google's billing system. No third-party processors for digital goods.</li>
+              <li>RevenueCat manages the cross-platform logic, but the actual purchase is always through the app store.</li>
+              <li>Before purchase, the user must see: price, billing period (monthly or yearly), and renewal terms clearly. No misleading trial copy.</li>
+              <li>Link to the app store subscription management page so users can cancel anytime.</li>
+              <li>Free tier (1 GB) is a permanent free plan, not a trial. No subscription management needed for it.</li>
+              <li>Restore Purchases button is required for users switching devices.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Storage edge cases</h4>
+            <ul class="rule-list">
+              <li><strong>Hitting 1 GB.</strong> Uploads stop with a clear message telling the user why and offering an upgrade path. No silent failures.</li>
+              <li><strong>Family storage.</strong> Each family member gets their own storage allocation. The Family plan gives each member their own tier (e.g., 10 GB each for 4 people). No shared pool — keeps it simple and avoids one person exhausting everyone's quota.</li>
+              <li><strong>What counts toward storage.</strong> The original file plus a compressed thumbnail and a database row. A 10 MB photo ends up using roughly 10.5 MB. We should mention this in the plan comparison so users are not surprised.</li>
+              <li><strong>Deleted files</strong> still count during the 30-day recovery window. Storage frees up after permanent deletion.</li>
+              <li><strong>Downgrading from paid to free.</strong> If someone is over 1 GB after downgrading, they cannot upload new files until they free up space. Existing documents stay accessible (read-only) for 30 days, then the oldest get soft-deleted.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Data & Privacy -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">PRIVACY</span>
+            <h3>Data Privacy</h3>
+          </div>
+
+          <div class="rule-card">
+            <ul class="rule-list">
+              <li><strong>Privacy policy</strong> — must be linked in the App Store and Play Store listings, plus visible inside the app (Settings → Privacy). It should cover what data we collect, how we use it, whether we share it (we do not), and how long we keep it.</li>
+              <li><strong>Apple privacy nutrition label</strong> — before submission we declare every data type we collect: email, name, optional phone number, document metadata, crash logs, analytics. Individual document contents are not collected by Apple, but the label still lists document data as "Linked to You."</li>
+              <li><strong>GDPR (UK)</strong> — users can request a copy of their data or delete their account. We must respond within 30 days.</li>
+              <li><strong>Age restriction</strong> — LME is 18+. We add an age acknowledgment during sign-up. No tracking of users under 16 (required by UK law).</li>
+              <li><strong>Analytics</strong> — we do not share data with ad networks. Firebase Analytics is fine for crash and usage stats, but no ad targeting. No need for the App Tracking Transparency prompt since we do not track users across apps or websites.</li>
+            </ul>
+
+            <h4 class="mono" style="margin:1rem 0 0.5rem;color:var(--text);">Storage things to keep in mind</h4>
+            <ul class="rule-list">
+              <li><strong>Documents vary wildly in size.</strong> A passport photo snapped on a phone is 2–5 MB. A scanned 50-page lease can be 200 MB as a PDF. Someone might even upload a video. Storage-based pricing handles this without arbitrary limits.</li>
+              <li><strong>When a free user hits 1 GB:</strong> block uploads and show a clear message with storage breakdown and an upgrade option. Do not fail silently — the user should not think the upload went through when it did not.</li>
+              <li><strong>Storage used</strong> includes the original file plus a thumbnail (generated for the gallery view) plus a small database entry. Roughly 5% overhead — worth mentioning in the plan comparison.</li>
+              <li><strong>Deleted documents</strong> still count against storage during the 30-day soft-delete window. Space frees up after permanent deletion.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Reference Links -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">LINKS</span>
+            <h3>Official Guidelines</h3>
+          </div>
+          <p class="sec-intro">These pages change every year or so. Worth checking before each submission.</p>
+          <div class="rule-card">
+            <ul class="rule-list">
+              <li><strong>Apple App Store Review Guidelines</strong><br><a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank" rel="noopener">developer.apple.com/app-store/review/guidelines/</a></li>
+              <li><strong>Apple Human Interface Guidelines</strong><br><a href="https://developer.apple.com/design/human-interface-guidelines/" target="_blank" rel="noopener">developer.apple.com/design/human-interface-guidelines/</a></li>
+              <li><strong>Apple Sign in with Apple</strong><br><a href="https://developer.apple.com/app-store/review/guidelines/#sign-in-with-apple" target="_blank" rel="noopener">Guidelines §4.8</a></li>
+              <li><strong>Apple Data Collection Disclosure</strong><br><a href="https://developer.apple.com/app-store/app-privacy-details/" target="_blank" rel="noopener">developer.apple.com/app-store/app-privacy-details/</a></li>
+              <li><strong>Google Play Developer Policy Center</strong><br><a href="https://play.google.com/about/developer-content-policy/" target="_blank" rel="noopener">play.google.com/about/developer-content-policy/</a></li>
+              <li><strong>Google Play Account Deletion</strong><br><a href="https://support.google.com/googleplay/android-developer/answer/10144311" target="_blank" rel="noopener">support.google.com/googleplay/android-developer/answer/10144311</a></li>
+              <li><strong>Google Play Background Location</strong><br><a href="https://support.google.com/googleplay/android-developer/answer/9799150" target="_blank" rel="noopener">support.google.com/googleplay/android-developer/answer/9799150</a></li>
+              <li><strong>Material Design Guidelines</strong><br><a href="https://material.io/design" target="_blank" rel="noopener">material.io/design</a></li>
+              <li><strong>UK GDPR</strong><br><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/" target="_blank" rel="noopener">ico.org.uk</a></li>
+              <li><strong>UK Age-Appropriate Design Code</strong><br><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/" target="_blank" rel="noopener">ICO Children's Code</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ============================================================
+           AREA VI — SECURITY & DELIVERABLES
+           ============================================================ -->
+      <div class="area area-vi" id="area-security">
+
+        <div class="area-head">
+          <span class="area-badge mono">AREA VI</span>
+          <h2>Security &amp; Deliverables</h2>
+        </div>
+        <p class="area-intro">Mandatory controls and handover artefacts — not optional, not phased.</p>
+
+        <!-- Security Baseline -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">SECURITY</span>
+            <h3>Security Baseline</h3>
+          </div>
+          <div class="badge-wall">
+            <span class="badge-s">&#10003; JWT authentication</span>
+            <span class="badge-s">&#10003; AWS S3 UK region</span>
+            <span class="badge-s">&#10003; AES-256 at rest</span>
+            <span class="badge-s">&#10003; TLS 1.3 in transit</span>
+            <span class="badge-s">&#10003; Soft delete (30 days)</span>
+            <span class="badge-s">&#10003; Immutable audit logs</span>
+            <span class="badge-s">&#10003; GDPR compliance</span>
+            <span class="badge-s">&#10003; Data export on request</span>
+            <span class="badge-s">&#10003; Account deletion</span>
+            <span class="badge-s">&#10003; Rate limiting (100 req/min)</span>
+            <span class="badge-s">&#10003; Pen test (third-party)</span>
+            <span class="badge-s">&#10003; WCAG 2.1 AA</span>
+          </div>
+        </section>
+
+        <!-- Deliverables -->
+        <section class="area-section">
+          <div class="sec-head">
+            <span class="sec-badge mono">HANDOVER</span>
+            <h3>Deliverables</h3>
+          </div>
+          <ul class="deliverable-list">
+            <li>iOS app + Android app (single React Native codebase)</li>
+            <li>Backend API (NestJS) + PostgreSQL database + AWS infrastructure</li>
+            <li>Admin portal — dashboard, analytics, KB editor</li>
+            <li>API documentation (OpenAPI/Swagger), deployment guide, architecture diagram</li>
+            <li>Third-party penetration test report</li>
+            <li>Source code access (private GitHub repository)</li>
+            <li>CI/CD pipeline configuration</li>
+            <li>Monitoring dashboards (Sentry + CloudWatch)</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-note mono">Life Made Easier · MVP Scope Freeze v1.0-rc · Prepared by Arun, Infinity Soft Systems · Confidential</div>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
