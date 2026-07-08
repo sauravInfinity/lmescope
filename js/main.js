@@ -88,7 +88,7 @@ const OUT_OF_SCOPE = [
   'OCR document recognition','AI photo scanning','Chatbot / conversational AI','Web user portal',
   'Dark mode','Custom categories','Business / multi-user accounts',
   'University / NHS / DVLA API integration','Auto document import','Desktop application',
-  'Multi-language support','Full offline mode','Estate planning','Will management',
+  'Multi-language support','Full offline mode'
 ];
 
 /* ---------- RENDER ACCORDION ---------- */
